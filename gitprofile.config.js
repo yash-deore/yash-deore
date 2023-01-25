@@ -171,7 +171,11 @@ const config = {
       class="text-primary" href="https://www.linkedin.com/in/yash-deore-coder/"
       target="_blank"
       rel="noreferrer"
-    >Yash Deore</a>`,
+      >Yash Deore</a> with <a 
+        class="text-primary" href="https://github.com/arifszn/gitprofile"
+        target="_blank"
+        rel="noreferrer"
+      >@arifszn/gitprofile</a>`,
 };
 
 export default config;
