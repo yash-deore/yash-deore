@@ -30,6 +30,7 @@ const config = {
   skills: [
     'React Js',
     'Next Js',
+    'Redux',
     'Ethers Js',
     'Hardhat',
     'Solidity',
