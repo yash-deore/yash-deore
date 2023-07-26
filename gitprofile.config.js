@@ -20,6 +20,7 @@ const config = {
     medium: '',
     dev: '',
     stackoverflow: '71496/yash-deore', // format: userid/username
+    leetcode: 'yash-deore',
     website: '',
     phone: '',
     email: 'codemaninfinity17@gmail.com',

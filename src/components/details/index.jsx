@@ -15,8 +15,9 @@ import {
   FaDev,
   FaFacebook,
   FaGlobe,
-  FaEthereum
+  FaEthereum,
 } from 'react-icons/fa';
+import { SiLeetcode } from 'react-icons/si';
 import PropTypes from 'prop-types';
 import { skeleton } from '../../helpers/utils';
 
@@ -31,8 +32,9 @@ const ListItem = ({ icon, title, value, link, skeleton = false }) => {
       <span className="w-2 m-2">{icon}</span>
       <div className="flex-grow font-medium px-2">{title}</div>
       <div
-        className={`${skeleton ? 'flex-grow' : ''
-          } text-sm font-normal text-right mr-2 ml-3 ${link ? 'truncate' : ''}`}
+        className={`${
+          skeleton ? 'flex-grow' : ''
+        } text-sm font-normal text-right mr-2 ml-3 ${link ? 'truncate' : ''}`}
         style={{
           wordBreak: 'break-word',
         }}
@@ -96,6 +98,14 @@ const Details = ({ profile, loading, social, github }) => {
                   }
                 />
               )}
+              {social?.linkedin && (
+                <ListItem
+                  icon={<GrLinkedinOption className="mr-2" />}
+                  title="LinkedIn:"
+                  value={social.linkedin}
+                  link={`https://www.linkedin.com/in/${social.linkedin}`}
+                />
+              )}
               <ListItem
                 icon={<AiFillGithub className="mr-2" />}
                 title="GitHub:"
@@ -110,12 +120,13 @@ const Details = ({ profile, loading, social, github }) => {
                   link={`https://twitter.com/${social.twitter}`}
                 />
               )}
-              {social?.linkedin && (
+
+              {social?.leetcode && (
                 <ListItem
-                  icon={<GrLinkedinOption className="mr-2" />}
-                  title="LinkedIn:"
-                  value={social.linkedin}
-                  link={`https://www.linkedin.com/in/${social.linkedin}`}
+                  icon={<SiLeetcode className="mr-2" />}
+                  title="LeetCode:"
+                  value={social.leetcode}
+                  link={`https://leetcode.com/${social.leetcode}`}
                 />
               )}
               {social?.dribbble && (
@@ -174,6 +185,7 @@ const Details = ({ profile, loading, social, github }) => {
                   link={`https://ethereum.stackexchange.com/users/${social.stackoverflow}`}
                 />
               )}
+
               {social?.website && (
                 <ListItem
                   icon={<FaGlobe className="mr-2" />}

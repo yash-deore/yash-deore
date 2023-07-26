@@ -81,8 +81,9 @@ const GitProfile = ({ config }) => {
           excludeRepo += `+-repo:${sanitizedConfig.github.username}/${project}`;
         });
 
-        let query = `user:${sanitizedConfig.github.username
-          }+fork:${!sanitizedConfig.github.exclude.forks}${excludeRepo}`;
+        let query = `user:${
+          sanitizedConfig.github.username
+        }+fork:${!sanitizedConfig.github.exclude.forks}${excludeRepo}`;
 
         let url = `https://api.github.com/search/repositories?q=${query}&sort=${sanitizedConfig.github.sortBy}&per_page=${sanitizedConfig.github.limit}&type=Repositories`;
 
@@ -253,6 +254,7 @@ GitProfile.propTypes = {
       medium: PropTypes.string,
       dev: PropTypes.string,
       stackoverflow: PropTypes.string,
+      leetcode: PropTypes.string,
       website: PropTypes.string,
       phone: PropTypes.string,
       email: PropTypes.string,
