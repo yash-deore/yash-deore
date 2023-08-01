@@ -26,7 +26,7 @@ const config = {
     email: 'codemaninfinity17@gmail.com',
   },
   resume: {
-    fileUrl: 'https://resume.io/r/9PDMXionw', // Empty fileUrl will hide the `Download Resume` button.
+    fileUrl: '', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'React Js',
@@ -87,9 +87,9 @@ const config = {
       link: 'https://ethglobal.com/showcase/self-sovereign-health-records-mq03o',
     },
     {
-      title: '5k+ Downloads on NPM',
+      title: '6k+ Downloads on NPM',
       description:
-        'react-ipfs-uploader managed to get 5k+ downloads on NPM. It is a package that gives you react components that allow you to upload files to IPFS.',
+        'react-ipfs-uploader managed to get 6k+ downloads on NPM. It is a package that gives you react components that allow you to upload files to IPFS.',
       imageUrl: 'https://via.placeholder.com/250x250',
       link: 'https://www.npmjs.com/package/react-ipfs-uploader',
     },
