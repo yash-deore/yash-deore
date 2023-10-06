@@ -87,7 +87,7 @@ const config = {
       link: 'https://ethglobal.com/showcase/self-sovereign-health-records-mq03o',
     },
     {
-      title: '6k+ Downloads on NPM',
+      title: '6000+ Downloads on NPM',
       description:
         'react-ipfs-uploader managed to get 6k+ downloads on NPM. It is a package that gives you react components that allow you to upload files to IPFS.',
       imageUrl: 'https://via.placeholder.com/250x250',
