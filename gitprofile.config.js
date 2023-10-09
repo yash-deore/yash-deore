@@ -104,10 +104,10 @@ const config = {
   //   id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
   // },
   // Track visitor interaction and behavior. https://www.hotjar.com
-  hotjar: {
-    id: '',
-    snippetVersion: 6,
-  },
+  // hotjar: {
+  //   id: '',
+  //   snippetVersion: 6,
+  // },
   themeConfig: {
     defaultTheme: 'winter',
 
