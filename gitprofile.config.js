@@ -148,12 +148,12 @@ const config = {
       'cmyk',
       'autumn',
       'business',
-      'acid',
-      'lemonade',
-      'night',
-      'coffee',
-      'winter',
-      'procyon',
+      // 'acid',
+      // 'lemonade',
+      // 'night',
+      // 'coffee',
+      // 'winter',
+      // 'procyon',
     ],
 
     // Custom theme
