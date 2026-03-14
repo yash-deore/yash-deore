@@ -9,6 +9,9 @@
     "type": "git",
     "url": "https://github.com/yash-deore/yash-deore"
   },
+  "engines": {
+    "node": ">=24.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
