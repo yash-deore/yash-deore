@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import config from './data/config';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -6,6 +7,8 @@ import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Education from './components/Education';
+import Blog from './components/Blog';
+import BlogPost from './components/BlogPost';
 import Writing from './components/Writing';
 import Footer from './components/Footer';
 
@@ -32,23 +35,38 @@ function App() {
   const toggle = () => setDark((d) => !d);
 
   return (
-    <div className="max-w-[640px] mx-auto px-6 min-h-screen flex flex-col">
-      <Header name={config.name} dark={dark} toggle={toggle} />
-      <main className="flex-1">
-        <Hero config={config} />
-        <Divider delay={3} />
-        <Projects items={config.projects} />
-        <Divider delay={4} />
-        <Experience items={config.experience} />
-        <Divider delay={5} />
-        <Skills items={config.skills} />
-        <Divider delay={6} />
-        <Education items={config.education} />
-        <Divider delay={7} />
-        <Writing items={config.writing} />
-      </main>
-      <Footer name={config.name} />
-    </div>
+    <BrowserRouter>
+      <div className="max-w-[640px] mx-auto px-6 min-h-screen flex flex-col">
+        <Header name={config.name} dark={dark} toggle={toggle} />
+        <main className="flex-1">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
+          </Routes>
+        </main>
+        <Footer name={config.name} />
+      </div>
+    </BrowserRouter>
+  );
+}
+
+function HomePage() {
+  return (
+    <>
+      <Hero config={config} />
+      <Divider delay={3} />
+      <Projects items={config.projects} />
+      <Divider delay={4} />
+      <Experience items={config.experience} />
+      <Divider delay={5} />
+      <Skills items={config.skills} />
+      <Divider delay={6} />
+      <Education items={config.education} />
+      <Divider delay={7} />
+      <Blog items={config.blog} />
+      <Divider delay={8} />
+      <Writing items={config.writing} />
+    </>
   );
 }
 

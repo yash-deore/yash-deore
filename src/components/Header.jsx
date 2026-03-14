@@ -1,16 +1,21 @@
+import { Link } from 'react-router-dom';
 import { SunIcon, MoonIcon } from './Icons';
 
 export default function Header({ name, dark, toggle }) {
   return (
     <header className="flex items-center justify-between pt-8 animate-fade-up delay-1">
-      <span className="font-semibold text-[15px] text-zinc-900 dark:text-zinc-100 tracking-tight">
+      <Link
+        to="/"
+        className="font-semibold text-[15px] text-zinc-900 dark:text-zinc-100 tracking-tight hover:opacity-80 transition-opacity"
+      >
         {name}
-      </span>
+      </Link>
       <div className="flex items-center gap-6">
         <nav className="flex items-center gap-5">
-          <NavLink href="#projects">projects</NavLink>
-          <NavLink href="#experience">experience</NavLink>
-          <NavLink href="#writing">writing</NavLink>
+          <NavLink href="/#projects">projects</NavLink>
+          <NavLink href="/#experience">experience</NavLink>
+          <NavLink href="/#blog">blog</NavLink>
+          <NavLink href="/#writing">writing</NavLink>
         </nav>
         <button
           onClick={toggle}

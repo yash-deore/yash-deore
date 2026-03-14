@@ -80,6 +80,37 @@ const config = {
     },
   ],
 
+  blog: [
+    {
+      title: 'Understanding Zero-Knowledge Proofs in 10 Minutes',
+      slug: 'understanding-zero-knowledge-proofs',
+      description: 'A beginner-friendly breakdown of ZK proofs, how they work, and why they matter for blockchain privacy.',
+      date: 'Mar 2026',
+      tags: ['Web3', 'Cryptography'],
+    },
+    {
+      title: 'Why I Switched from Redux to Zustand',
+      slug: 'why-i-switched-from-redux-to-zustand',
+      description: 'After two years of Redux boilerplate, I tried Zustand on a production app. Here\'s what changed.',
+      date: 'Feb 2026',
+      tags: ['React', 'State Management'],
+    },
+    {
+      title: 'Ship Fast, Learn Faster: Lessons from Open Source',
+      slug: 'ship-fast-learn-faster',
+      description: 'What maintaining an NPM package with 6000+ downloads taught me about building software people actually use.',
+      date: 'Jan 2026',
+      tags: ['Open Source', 'Career'],
+    },
+    {
+      title: 'A Practical Guide to IPFS Pinning Services',
+      slug: 'practical-guide-to-ipfs-pinning',
+      description: 'Comparing Pinata, Web3.Storage, and Infura for decentralized file storage in production apps.',
+      date: 'Dec 2025',
+      tags: ['IPFS', 'Web3'],
+    },
+  ],
+
   writing: [
     {
       title: 'Building decentralized file storage with React and IPFS',
