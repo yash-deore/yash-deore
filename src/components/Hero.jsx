@@ -2,7 +2,6 @@ import {
   MailIcon,
   GitHubIcon,
   LinkedInIcon,
-  StackOverflowIcon,
   LeetCodeIcon,
 } from './Icons';
 
@@ -29,9 +28,6 @@ export default function Hero({ config }) {
         </SocialButton>
         <SocialButton href={social.linkedin} title="LinkedIn">
           <LinkedInIcon />
-        </SocialButton>
-        <SocialButton href={social.stackoverflow} title="Stack Overflow">
-          <StackOverflowIcon />
         </SocialButton>
         <SocialButton href={social.leetcode} title="LeetCode">
           <LeetCodeIcon />

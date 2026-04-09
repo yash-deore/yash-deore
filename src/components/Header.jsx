@@ -15,7 +15,6 @@ export default function Header({ name, dark, toggle }) {
           <NavLink href="/#projects">projects</NavLink>
           <NavLink href="/#experience">experience</NavLink>
           <NavLink href="/#blog">blog</NavLink>
-          <NavLink href="/#writing">writing</NavLink>
         </nav>
         <button
           onClick={toggle}

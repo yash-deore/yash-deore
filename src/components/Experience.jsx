@@ -4,7 +4,7 @@ export default function Experience({ items }) {
       <h2 className="text-xs font-medium uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-5">
         Experience
       </h2>
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-8">
         {items.map((item) => (
           <div
             key={item.company}
@@ -18,11 +18,23 @@ export default function Experience({ items }) {
                 {item.role}
               </h3>
               <p className="text-[13px] text-zinc-400 dark:text-zinc-500">
-                {item.company}
+                {item.company}{item.location ? ` \u00b7 ${item.location}` : ''}
               </p>
-              <p className="text-[13px] text-zinc-500 dark:text-zinc-500 mt-1.5 leading-relaxed">
-                {item.description}
-              </p>
+              {item.bullets && (
+                <ul className="mt-2 space-y-1.5">
+                  {item.bullets.map((bullet, i) => (
+                    <li key={i} className="text-[13px] text-zinc-500 dark:text-zinc-500 leading-relaxed flex gap-2">
+                      <span className="text-zinc-300 dark:text-zinc-700 mt-[3px] flex-shrink-0">&bull;</span>
+                      <span>{bullet}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+              {item.stack && (
+                <p className="text-[12px] font-mono text-zinc-400 dark:text-zinc-600 mt-2">
+                  {item.stack}
+                </p>
+              )}
             </div>
           </div>
         ))}

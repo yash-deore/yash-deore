@@ -9,7 +9,6 @@ import Skills from './components/Skills';
 import Education from './components/Education';
 import Blog from './components/Blog';
 import BlogPost from './components/BlogPost';
-import Writing from './components/Writing';
 import Footer from './components/Footer';
 
 function App() {
@@ -64,8 +63,6 @@ function HomePage() {
       <Education items={config.education} />
       <Divider delay={7} />
       <Blog items={config.blog} />
-      <Divider delay={8} />
-      <Writing items={config.writing} />
     </>
   );
 }

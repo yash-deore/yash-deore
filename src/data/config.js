@@ -1,82 +1,83 @@
 const config = {
   name: 'Yash Deore',
-  title: 'Software Developer',
-  subtitle: 'Web3 Builder \u00b7 Open Source Contributor \u00b7 CS & AI',
-  bio: `I build modern web applications and decentralized systems. Studied Computer Science and Artificial Intelligence at IIIT. I like shipping things that people use \u2014 my open-source React library has 6,000+ NPM downloads. Currently focused on frontend engineering and blockchain tooling.`,
+  title: 'Software Engineer',
+  subtitle: 'Backend Engineer \u00b7 Go \u00b7 Microservices \u00b7 CS & AI',
+  bio: `Software Engineer with a Bachelor of Technology in Computer Science. Skilled in Go, gRPC, Protobuf, DynamoDB, Kafka, and React. Solving problems for a living.`,
 
   social: {
-    email: 'codemaninfinity17@gmail.com',
+    email: 'yashdeoredeveloper@gmail.com',
     github: 'https://github.com/yash-deore',
     linkedin: 'https://linkedin.com/in/yash-deore-coder',
-    stackoverflow: 'https://stackoverflow.com/users/71496/yash-deore',
     leetcode: 'https://leetcode.com/yash-deore',
   },
 
   projects: [
     {
+      name: 'Self Sovereign Health Records',
+      description: 'Decentralized health records using Ceramic & LIT Protocol. Won two awards worth $2500 at ETH Global 2022.',
+      tags: ['Node.js', 'Ceramic', 'LIT Protocol', 'React'],
+      url: 'https://github.com/yash-deore',
+    },
+    {
       name: 'react-ipfs-uploader',
-      description: 'React component library for uploading files to IPFS. 6000+ downloads on NPM.',
-      tags: ['React', 'IPFS'],
+      description: 'NPM library with 7 React components for IPFS file/folder uploads. 2300+ downloads, used in 250+ GitHub repos.',
+      tags: ['Node.js', 'IPFS', 'React'],
       url: 'https://www.npmjs.com/package/react-ipfs-uploader',
-    },
-    {
-      name: 'ETH Global HackFS dApp',
-      description: 'Hackathon-winning decentralized application using Ceramic & XMTP protocols.',
-      tags: ['Solidity', 'Ceramic'],
-      url: '#',
-    },
-    {
-      name: 'Web3 Toolkit',
-      description: 'Utilities for blockchain development and smart contract interaction.',
-      tags: ['Ethers.js', 'Hardhat'],
-      url: '#',
-    },
-    {
-      name: 'Portfolio',
-      description: 'This site. Minimal, fast, dark-first. React + Vite + Tailwind.',
-      tags: ['React', 'Tailwind'],
-      url: 'https://github.com/yash-deore/yash-deore',
     },
   ],
 
   experience: [
     {
-      date: '2022 \u2014 2023',
-      role: 'Frontend Developer',
-      company: 'SaasPay',
-      description:
-        'Built frontend for a fintech SaaS platform \u2014 payment flows, dashboards, component libraries.',
+      date: 'Dec 2025 \u2014 Present',
+      role: 'Software Engineer 2',
+      company: 'Speakx AI',
+      location: 'Delhi, India',
+      bullets: [
+        'Spearheaded gamification by engineering a multi-dimensional ranking system for city, state, and national leaderboards, resulting in a 15% increase in user engagement.',
+        'Architected end-to-end flow for dynamic micro-leaderboards, driving an 11% increase in user engagement through granular competitive tracking.',
+        'Developed the core backend logic and user flow for the "Home and Rent" module, expanding the platform\'s interactive capabilities.',
+      ],
+      stack: 'Go, gRPC, Protobuf, Redis, MongoDB, Kafka, LLMs',
     },
     {
-      date: '2022',
-      role: 'Web Developer',
-      company: 'Spect',
-      description:
-        'Web interfaces for a Web3 project management and DAO coordination tool.',
+      date: 'Oct 2024 \u2014 Nov 2025',
+      role: 'Software Engineer',
+      company: 'Zomato',
+      location: 'Delhi, India',
+      bullets: [
+        'Pioneered Store Page and Brand Page from scratch. Reduced page load times by 40% via asynchronous calls and reducing external service calls.',
+        'Architected merchant dashboard with custom middleware, delivering store and franchise management features to 300+ merchants.',
+        'Designed Transaction History and Account Statements for merchants \u2014 90,000+ transactions and 9,000+ statements monthly.',
+        'Implemented Consolidated Statements and Invoices, cutting cross-outlet reporting time from 3 hours to 15\u201330 minutes.',
+        'Automated daily franchise payout generation, processing 300+ reports and 3,000+ transactions, eliminating 2 hours of manual work.',
+      ],
+      stack: 'Go, gRPC, Protobuf, DynamoDB, Kafka',
     },
   ],
 
   skills: [
-    'React',
-    'Next.js',
-    'TypeScript',
-    'Redux',
-    'Node.js',
-    'Tailwind CSS',
-    'Solidity',
-    'Ethers.js',
-    'Hardhat',
-    'IPFS',
-    'Ceramic',
-    'MongoDB',
-    'Git',
+    'Go (Golang)',
+    'gRPC',
+    'Protobuf',
+    'DynamoDB',
+    'Kafka',
+    'Redis',
+    'React.js',
+    'APIs',
+    'Microservices',
+    'Backend Development',
+    'SDLC',
+    'Agile/Scrum',
+    'Unit Testing',
+    'Performance Optimization',
   ],
 
   education: [
     {
       date: '2020 \u2014 2024',
       institution: 'Indian Institute of Information Technology',
-      degree: 'Computer Science and Artificial Intelligence',
+      degree: 'B.Tech in Computer Science, Minor in Artificial Intelligence',
+      location: 'Lucknow, India',
     },
   ],
 
@@ -108,24 +109,6 @@ const config = {
       description: 'Comparing Pinata, Web3.Storage, and Infura for decentralized file storage in production apps.',
       date: 'Dec 2025',
       tags: ['IPFS', 'Web3'],
-    },
-  ],
-
-  writing: [
-    {
-      title: 'Building decentralized file storage with React and IPFS',
-      url: '#',
-      year: '2023',
-    },
-    {
-      title: 'Lessons from shipping an NPM package to 6000 users',
-      url: '#',
-      year: '2022',
-    },
-    {
-      title: 'What I learned at ETH Global HackFS',
-      url: '#',
-      year: '2022',
     },
   ],
 };

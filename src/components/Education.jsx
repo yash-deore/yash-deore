@@ -20,6 +20,11 @@ export default function Education({ items }) {
               <p className="text-[13px] text-zinc-400 dark:text-zinc-500">
                 {item.degree}
               </p>
+              {item.location && (
+                <p className="text-[12px] text-zinc-400 dark:text-zinc-600 mt-0.5">
+                  {item.location}
+                </p>
+              )}
             </div>
           </div>
         ))}
